@@ -13,3 +13,15 @@ export const environment = {
  * because it will have a performance impact when errors are thrown
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+// export const environment = {
+//     production: true,
+//     firebase: {
+//       apiKey: "AIzaSyDYWUzvbegHDMUSDfDifW8VekKMMrRklsI",
+//       authDomain: "agenciaviajes-lighthouse.firebaseapp.com",
+//       databaseURL: "https://agenciaviajes-lighthouse.firebaseio.com",
+//       projectId: "agenciaviajes-lighthouse",
+//       storageBucket: "agenciaviajes-lighthouse.appspot.com",
+//       messagingSenderId: "57155122940"
+//     }
+// };

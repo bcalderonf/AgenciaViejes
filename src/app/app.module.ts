@@ -5,6 +5,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
+import { AngularFireModule } from '@angular/fire';
+
+export const firebaseConfig = {
+    apiKey: "AIzaSyDYWUzvbegHDMUSDfDifW8VekKMMrRklsI",
+    authDomain: "agenciaviajes-lighthouse.firebaseapp.com",
+    databaseURL: "https://agenciaviajes-lighthouse.firebaseio.com",
+    projectId: "agenciaviajes-lighthouse",
+    storageBucket: "agenciaviajes-lighthouse.appspot.com",
+    messagingSenderId: "57155122940"
+  };
+
 
 @NgModule({
   declarations: [
@@ -14,7 +25,8 @@ import { MatCardModule } from '@angular/material/card';
   imports: [
     BrowserModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
